@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "build/main.js"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "gas-health-check",
+  "version": "1.0.0",
+  "description": "gasで死活監視",
+  "main": "build/main.js",
+  "scripts": {
+    "setup": "npm run login && npm run create",
+    "login": "clasp login",
+    "create": "clasp create gas-health-check",
+    "build": "tsc",
+    "push": "clasp push",
+    "deploy": "npm run build && npm run push",
+    "run": "clasp run myFunction",
+    "logs": "clasp logs",
+    "open": "clasp open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "soramugi",
+  "license": "ISC",
+  "dependencies": {
+    "@google/clasp": "^1.3.2",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "0.0.23"
+  }
+}

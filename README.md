@@ -2,7 +2,7 @@
 
 GoogleAppsScriptでwebサイトの死活監視
 
-## セットアップ
+## 認証と雛形作成
 
     npm i
     npm i -g clasp

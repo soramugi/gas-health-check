@@ -9,8 +9,7 @@
     "create": "clasp create gas-health-check",
     "build": "tsc",
     "push": "npm run build && clasp push",
-    "run": "clasp run myFunction",
-    "open": "clasp open",
+    "run": "clasp run setScheduling",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "soramugi",

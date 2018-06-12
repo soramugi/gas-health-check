@@ -35,7 +35,7 @@ const fetchUrl = (url: string, statusPreCode: string) => {
 }
 
 const sendMail = (url: string, statusCode: number) => {
-  const state = (statusCode === 200) ? "OK" : "ALARM";
+  const state = (/^2/.test(String(statusCode))) ? "OK" : "ALARM";
   const to = scriptProperties.getProperty("to")
   const subject = "[gas-health-check] [" + state + "] " + statusCode + ": " + url ;
   const body = state + "\n" + statusCode + "\n" + url;
